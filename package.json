@@ -1,28 +1,29 @@
 {
   "name": "node-cli",
-  "version": "1.0.0",
+  "author": "jiminikiz",
+  "version": "1.1.0",
   "description": "Installable, customizable CLI Wizard!",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jiminikiz/node-cli.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jiminikiz/node-cli/issues"
   },
   "homepage": "https://github.com/jiminikiz/node-cli#readme",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "node-cli": "./bin/cli.js"
+  },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^4.1.2",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "figlet": "^1.2.0",
-    "inquirer": "^6.0.0",
-    "ora": "^2.1.0",
-    "yargs": "^11.0.0"
-  },
-  "bin": {
-    "node-cli": "./bin/cli.js"
+    "inquirer": "^8.0.0",
+    "ora": "^6.0.0",
+    "yargs": "^17.0.0"
   }
 }

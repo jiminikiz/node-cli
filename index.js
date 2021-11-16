@@ -1,10 +1,10 @@
-const yargs = require('yargs');
-const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
-const ora = require('ora');
-const inquirer = require('inquirer');
-// const clui = require('clui');
+import ora from 'ora'
+import yargs from 'yargs';
+import chalk from 'chalk';
+import clear from 'clear';
+import figlet from 'figlet';
+import inquirer from 'inquirer';
+// import clui from 'clui'
 
 const defaults = {
   font: 'ANSI Shadow',
@@ -14,7 +14,8 @@ const defaults = {
   errorMessage: 'Unknown Error!',
   restartMessage: 'Would you like to perform another action?',
   exitMessage: '👋 Venture forth and be awesome! 👋',
-  args: yargs.option('verbose', { alias: 'v', default: false }).argv,
+  // TODO: redefine CLI args
+  args: {}, // yargs.option('verbose', { alias: 'v', default: false }).argv,
   actions: {
     'Go Fish!': (cli) => {
       cli.spinner.start('Reeling in the line...');
@@ -163,4 +164,4 @@ class CLI {
   }
 }
 
-module.exports = CLI;
+export default CLI;

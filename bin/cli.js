@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-const CLI = require('../index');
+import CLI from '../index.js';
 
 const cli = new CLI({ caption: 'Do awesome things!' });
 
