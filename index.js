@@ -1,11 +1,10 @@
 import ora from 'ora'
-import yargs from 'yargs';
+// import yargs from 'yargs';
 import chalk from 'chalk';
 import clear from 'clear';
 import figlet from 'figlet';
 import inquirer from 'inquirer';
 import { DefaultActions } from './defaultActions.js'
-// import clui from 'clui'
 
 const defaults = {
   font: 'ANSI Shadow',
@@ -20,7 +19,7 @@ const defaults = {
   actions: DefaultActions,
 };
 
-class CLI {
+export class CLI {
   constructor(options = {}) {
     this.spinner = new ora();
     this.args = options.argv || defaults.args;
