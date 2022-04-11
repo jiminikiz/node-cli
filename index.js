@@ -122,7 +122,7 @@ export class CLI {
   }
   quit(message) {
     this.log.success(message || this.messages.onExit);
-    process.exitCode = 1;
+    process.exitCode = 0;
   }
 }
 
