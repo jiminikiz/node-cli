@@ -1,0 +1,26 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {},
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:import/warnings",
+    "plugin:import/errors"
+  ],
+  "rules": {
+    // https://github.com/benmosher/eslint-plugin-import
+    "import/no-unresolved": ["error", { "commonjs": true, "amd": false }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "no-async-promise-executor": ["warn"],
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "no-fallthrough": ["warn"],
+    "semi": ["error", "always"]
+  }
+}

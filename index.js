@@ -37,7 +37,7 @@ export class CLI {
       onExit: options.exitMessage || defaults.exitMessage,
       onRestart: options.restartMessage || defaults.restartMessage
     };
-    
+
     this.header = chalk
       .hex(this.color)
       .bold(figlet.textSync(this.title, { font: this.font }).trimEnd());

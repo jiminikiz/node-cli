@@ -14,7 +14,7 @@
   "homepage": "https://github.com/jiminikiz/node-cli#readme",
   "main": "index.js",
   "type": "module",
-  "scripts":{
+  "scripts": {
     "start": "node bin/cli"
   },
   "bin": {
@@ -28,5 +28,8 @@
     "inquirer": "^8.0.0",
     "ora": "^6.0.0",
     "yargs": "^17.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.26.0"
   }
 }
