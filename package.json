@@ -21,12 +21,12 @@
     "node-cli": "./bin/cli.js"
   },
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "clear": "^0.1.0",
-    "figlet": "^1.2.0",
-    "inquirer": "^8.0.0",
-    "ora": "^6.0.0",
-    "yargs": "^17.0.0"
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.2",
+    "ora": "^6.1.0",
+    "yargs": "^17.4.1"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
