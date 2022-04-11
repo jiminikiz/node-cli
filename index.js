@@ -40,13 +40,7 @@ export class CLI {
     
     this.header = chalk
       .hex(this.color)
-      .bold(
-        figlet.textSync(this.title, {
-          //font: 'Larry 3D'
-          //font: 'Stronger Than All'
-          font: this.font
-        }).trimEnd()
-      );
+      .bold(figlet.textSync(this.title, { font: this.font }).trimEnd());
 
     this.log = {
       verbose : (message) => this.verbose && console.info(chalk.blue('VERBOSE:'), message),
