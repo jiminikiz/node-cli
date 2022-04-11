@@ -14,6 +14,9 @@
   "homepage": "https://github.com/jiminikiz/node-cli#readme",
   "main": "index.js",
   "type": "module",
+  "scripts":{
+    "start": "node bin/cli"
+  },
   "bin": {
     "node-cli": "./bin/cli.js"
   },
