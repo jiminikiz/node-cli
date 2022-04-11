@@ -33,7 +33,7 @@ export class CLI {
     this.mode = (this.verbose ? `Mode: ${chalk.blue('VERBOSE')} |`: '');
 
     this.messages = {
-      onError : options.errorMessage || defaults.errorMessage,
+      onError: options.errorMessage || defaults.errorMessage,
       onExit: options.exitMessage || defaults.exitMessage,
       onRestart: options.restartMessage || defaults.restartMessage
     };
@@ -43,11 +43,11 @@ export class CLI {
       .bold(figlet.textSync(this.title, { font: this.font }).trimEnd());
 
     this.log = {
-      verbose : (message) => this.verbose && console.info(chalk.blue('VERBOSE:'), message),
-      info    : (message) => console.info(chalk.blue('INFO:'), message),
-      warning : (message) => console.warn(chalk.yellow('WARNING:'), message),
-      error   : (message) => console.error(chalk.bgRed.black('ERROR:'), chalk.red(message || this.messages.onError)),
-      success : (message) => console.log(chalk.green('SUCCESS:'), message)
+      verbose: (message) => this.verbose && console.info(chalk.blue('VERBOSE:'), message),
+      info: (message) => console.info(chalk.blue('INFO:'), message),
+      warning: (message) => console.warn(chalk.yellow('WARNING:'), message),
+      error: (message) => console.error(chalk.bgRed.black('ERROR:'), chalk.red(message || this.messages.onError)),
+      success: (message) => console.log(chalk.green('SUCCESS:'), message)
     };
 
     this.print = {
